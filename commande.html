@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+    <nav> 
+        <a href="web.html">ACCEUIL</a>
+        <a href="about.html">A propos de nous</a>
+        <a href="commande.html">Passer votre commande</a>
+    
+    
+    </nav>
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passer votre commande - CARS 221</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>CARS 221</h1>
+        <nav>
+            <ul>
+                <li><a href="web.html">Accueil</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="commande.html" class="active">Passer votre commande</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section id="order">
+            <h2>Passer votre commande</h2>
+            <p>Remplissez le formulaire ci-dessous pour commander votre véhicule préféré.</p>
+            <form action="confirmation.html" method="post">
+                <!-- Informations personnelles -->
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <div class="form-group">
+                        <label for="full-name">Nom complet :</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone :</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                    </div>
+                </fieldset>
+
+                <!-- Détails du véhicule -->
+                <fieldset>
+                    <legend>Détails du véhicule</legend>
+                    <div class="form-group">
+                        <label for="car-model">Modèle de voiture :</label>
+                        <select id="car-model" name="car-model" required>
+                            <option value="modèle-a">Modèle A - 20,000€</option>
+                            <option value="modèle-b">Modèle B - 25,000€</option>
+                            <option value="modèle-c">Modèle C - 30,000€</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantité :</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery">Type de livraison :</label>
+                        <select id="delivery" name="delivery" required>
+                            <option value="standard">Standard - Gratuit</option>
+                            <option value="express">Express - 50€</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Confirmation -->
+                <button type="submit" class="btn">Confirmer la commande</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 CARS 221. Tous droits réservés. | <a href="mentions.html">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
